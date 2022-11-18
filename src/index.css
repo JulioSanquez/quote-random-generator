@@ -26,8 +26,9 @@ body{
   padding: 2rem 4rem;
   border-radius: 1rem;
   max-width: 90%;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.75),
+              7px 9px 20px 0 rgba(0,0,0,0.75);
 }
-
 
 @media(min-width: 900px){
   .quoteBox{
@@ -49,6 +50,7 @@ body{
   color: white;
   border-radius: 50%;
   aspect-ratio: 1;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.75);
 }
 
 .quote-box-footer>i{

@@ -20,11 +20,17 @@ function App() {
   }
 
   const backgroundObject = {
-    backgroundColor: color
+    background: color
   }
 
-  const colorObject = {
-    color
+  const colorObject = color.includes("gradient")?{
+    backgroundImage:`${color}`,
+    webkitTextFillColor: "transparent",
+    webkitBackgroundClip: "text"
+  }:{
+    backgroundImage:`white`,
+    webkitTextFillColor: `${color}`,
+    webkitBackgroundClip: "text"
   }
 
   return (
